@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Blank template</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <h1>Cypress Cove Quick Copies</h1>
+        <!-- Abel -->
+        <input type="text" value="(box:'XX=='')[<div id='abel'>$abelpfp  (text-size:.55)[`  ` $abel]<br>
+TEXT</div>]" id="myInput">
+        <button onclick="myFunction()">Abel</button><br>
+      
+      
+      
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>
+
+  // JavaScript
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
