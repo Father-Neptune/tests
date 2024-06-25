@@ -22,9 +22,8 @@ TEXT</div>]" id="myInput">
       
       
         <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
-        
-    </body>
+        <script src="scripts.js">
+
   // JavaScript
 function myFunction() {
   // Get the text field
@@ -40,6 +39,10 @@ function myFunction() {
   // Alert the copied text
   alert("Copied the text: " + copyText.value);
 }
+</script>
+
+</body> 
+
 </html>
 
 
